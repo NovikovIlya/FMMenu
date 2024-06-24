@@ -9,14 +9,14 @@ function App() {
 
   return (<>
     <div className='container mx-auto'>
-      <Header/>
+      <Header />
     </div>
     <Features />
     <div className='container mx-auto mt-16 mb-16'>
-      <Questions/>
+      <Questions />
     </div>
-   
-      <Footer/>
+
+    <Footer />
 
   </>
   )
