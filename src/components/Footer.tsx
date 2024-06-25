@@ -4,7 +4,7 @@ import logo from '../assets/icon-facebook.svg'
 import logoTwo from '../assets/icon-twitter.svg'
 
 const Footer = () => {
-    const onFinish: any = (values:any) => {
+    const onFinish: any = () => {
         alert('Success:');
       };
       
