@@ -4,15 +4,23 @@ import logo from '../assets/icon-facebook.svg'
 import logoTwo from '../assets/icon-twitter.svg'
 
 const Footer = () => {
+    const onFinish: any = (values:any) => {
+        alert('Success:');
+      };
+      
+      const onFinishFailed:any = (errorInfo:any) => {
+        console.log('Failed:', errorInfo);
+      };
     return (
         <>
-            <div className='flex justify-center items-center bg-blue-200'>
-                <div className=''>
-                    <div className='text-center'>35.000 ALREADY JOINED</div>
-                    <div className='text-center'>STAY UP TO DATE  with what  were doing</div>
-                    <Form className=' flex gap-3'>
+            <div className='flex justify-center items-center bg-blue-200 p-6'>
+                <div className=' flex flex-col gap-6'>
+                    <div className='text-center '>35.000 ALREADY JOINED</div>
+                    <div className='text-center text-3xl font-bold'>STAY UP TO DATE  with what  were doing</div>
+                    <Form  onFinish={onFinish}
+    onFinishFailed={onFinishFailed} className=' flex gap-3 justify-center'>
                         <EmailInput />
-                        <Button>Contact us</Button>
+                        <Button htmlType="submit" >Contact us</Button>
                     </Form>
                 </div>
             </div>

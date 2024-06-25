@@ -72,11 +72,18 @@ const Features = () => {
     };
 
     return (
-        <div className='flex justify-center w-full'>
-            <div className=''>
-                < Tabs centered size='large' defaultActiveKey="1" items={items} onChange={onChange} />
+        <>
+            <div className='text-center mb-20 mt-20'>
+                <div className='text-3xl fot-bold '>Features</div>
+                <div className='flex justify-center'><div className='w-[500px]'>A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see your sites load instantly. Try it for free</div></div>
             </div>
-        </div>
+            <div className='flex justify-center w-full'>
+                <div className=''>
+                    < Tabs centered size='large' defaultActiveKey="1" items={items} onChange={onChange} />
+                </div>
+            </div>
+        </>
     );
 }
 

@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import type { CollapseProps } from 'antd';
 import { Button, Collapse, ConfigProvider } from 'antd';
@@ -35,11 +33,16 @@ const Questions: React.FC = () => {
 
     return (
         <>
+            <div>
+                <div className='text-3xl font-bold text-center mt-20 '>Frequenly asked questions</div>
+                <div className='flex justify-center'><div className='w-[500px] text-center'>A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see your sites load instantly. Try it for free</div></div>
+            </div>
             <ConfigProvider
                 theme={{
                     components: {
                         Collapse: {
-                            headerBg:'rgba(0, 0, 0, 0.00)'
+                            headerBg: 'rgba(0, 0, 0, 0.00)'
                         },
                     },
                 }}

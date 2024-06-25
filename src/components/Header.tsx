@@ -1,6 +1,4 @@
 import { Button } from 'antd'
-import React from 'react'
-import image from '../assets/logo-bookmark.svg'
 import img from '../assets/illustration-features-tab-1.svg'
 
 const Header = () => {
