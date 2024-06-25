@@ -1,3 +1,4 @@
+import Extenstions from './components/Extenstions'
 import Features from './components/Features'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -8,11 +9,14 @@ function App() {
 
 
   return (<>
-    <div className='container mx-auto'>
+    <div className='container mx-auto px-4'>
       <Header />
     </div>
     <Features />
-    <div className='container mx-auto mt-16 mb-16'>
+    <div className='container mx-auto px-4'>
+      <Extenstions />
+    </div>
+    <div className='container mx-auto px-4 mt-16 mb-16'>
       <Questions />
     </div>
 
