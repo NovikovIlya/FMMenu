@@ -22,7 +22,7 @@ const Header = () => {
         <div> A clean and simple interface to organize your favourite websites. Open a new 
   browser tab and see your sites load instantly. Try it for free.</div>
         <div className='flex gap-4'>
-          <Button>Git it in chrome</Button>
+          <Button type="primary">Git it in chrome</Button>
           <Button>Git it in firefox</Button>
         </div>
       </div>
